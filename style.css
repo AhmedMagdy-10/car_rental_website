@@ -61,7 +61,6 @@ body {
     font-weight: 900;
     margin-left: 15px;
     direction: ltr;
-    /* لجعل الرقم من اليسار لليمين */
     display: inline-block;
 }
 
@@ -353,11 +352,9 @@ select {
     font-size: 1rem;
 }
 
-/* إصلاح اتجاه رقم الهاتف داخل حقل الإدخال (Input) */
 #phone {
     direction: ltr;
     text-align: right;
-    /* لجعل مؤشر الكتابة يبدأ من اليمين كالعادة مع الحفاظ على ترتيب الأرقام */
 }
 
 .group label {
@@ -395,7 +392,6 @@ select {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* إصلاح الرقم في الـ CTA */
 .cta-box a {
     direction: ltr;
     display: inline-block;
@@ -436,6 +432,44 @@ select {
 /* --- Responsive & Fixes Updates --- */
 @media (max-width: 900px) {
 
+    /* تعديلات الهيدر للموبايل */
+    .nav-links {
+        display: none;
+        /* إخفاء الروابط (خدماتنا، لماذا نحن، EN) */
+    }
+
+    .navbar {
+        padding: 8px 0;
+    }
+
+    .nav-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .logo img {
+        height: 35px;
+        /* تصغير اللوجو قليلاً ليناسب المساحة */
+    }
+
+    .nav-phone {
+        margin-left: 0;
+        font-size: 0.8rem;
+        /* ضبط حجم الرقم */
+        flex-shrink: 0;
+    }
+
+    .btn-primary-sm {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        /* ضبط حجم الزر */
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    /* بقية تعديلات الموبايل */
     .grid-2,
     .booking-grid,
     .location-card {
