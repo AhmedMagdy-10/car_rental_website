@@ -404,6 +404,7 @@ select {
     color: #888;
 }
 
+/* --- Responsive Updates --- */
 @media (max-width: 900px) {
 
     .grid-2,
@@ -415,5 +416,55 @@ select {
 
     .hero-content h1 {
         font-size: 2.2rem;
+        text-align: center;
+    }
+
+    /* 1. إخفاء أسهم السلايدر في الموبايل */
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+    /* 2. تحسين شكل الخريطة في الموبايل */
+    .loc-map {
+        width: 100%;
+        height: 300px;
+        /* تقليل الارتفاع ليناسب الموبايل */
+    }
+
+    .loc-content {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    /* 3. تحسين شكل الفورم في الموبايل */
+    .booking-form-area {
+        padding: 25px 15px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        /* جعل الحقول تحت بعضها */
+        gap: 10px;
+    }
+
+    .hero-btns {
+        justify-content: center;
+        flex-direction: column;
+        /* الأزرار تحت بعضها في الشاشات الصغيرة جداً */
+        align-items: center;
+    }
+
+    .hero-stats {
+        width: 95%;
+        flex-wrap: wrap;
+        /* السماح للعناصر بالنزول لسطر جديد إذا لزم الأمر */
+        justify-content: center;
+        bottom: 15px;
+    }
+
+    .stat-bubble {
+        padding: 8px 15px;
+        font-size: 0.75rem;
     }
 }
