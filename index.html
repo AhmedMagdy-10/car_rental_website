@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Car Hassan | سبييد كار حسن</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <img src="publicContain-removebg-preview.png" alt="Speed Car Hassan">
+            </div>
+            <nav class="nav-links">
+                <a href="#services">خدماتنا</a>
+                <a href="#why-us">لماذا نحن؟</a>
+                <a href="#location">موقعنا</a>
+                <span class="lang-switch">EN</span>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:01000030402" class="nav-phone">010 00030402</a>
+                <button class="btn-primary-sm" onclick="scrollToSection('booking')">احجز الآن</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1920');">
+                    <div class="hero-content container">
+                        <span class="badge-gold">Premium Car Rental</span>
+                        <h1>استأجر سيارتك في المنصورة <br><span>بسهولة وأمان</span></h1>
+                        <p>تأجير السيارات - إيجار بسائق وبدون سائق بأحدث الموديلات</p>
+                        <div class="hero-btns">
+                            <button class="btn-orange" onclick="scrollToSection('booking')">احجز الآن</button>
+                            <button class="btn-white" onclick="openWhatsApp()">اتصل الآن</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1920');">
+                    <div class="hero-content container">
+                        <span class="badge-gold">Wedding Services</span>
+                        <h1>سيارات الأفراح والمناسبات</h1>
+                        <p>اجعل ليلتك لا تُنسى مع أفخم السيارات المزينة خصيصاً لك</p>
+                        <div class="hero-btns">
+                            <button class="btn-orange" onclick="scrollToSection('booking')">اطلب باقة الزفاف</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="container hero-stats">
+            <div class="stat-bubble">
+                <i class="fas fa-star"></i>
+                <span>4.2/5 (12 مراجعة)</span>
+            </div>
+            <div class="stat-bubble">
+                <i class="fas fa-clock"></i>
+                <span>متاح 24/7</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>خدماتنا | Our Services</h2>
+                <div class="line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-tag">متاح الآن</div>
+                    <i class="fas fa-user-tie"></i>
+                    <h3>إيجار بسائق</h3>
+                    <p>سائقون محترفون ومدربون على أعلى مستوى لضمان راحتك وأمانك طوال الرحلة.</p>
+                </div>
+                <div class="service-card highlighted">
+                    <div class="card-tag">أسعار تنافسية</div>
+                    <i class="fas fa-car"></i>
+                    <h3>إيجار بدون سائق</h3>
+                    <p>استمتع بحرية القيادة مع أسطولنا الحديث من السيارات المجهزة بالكامل.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-tag">باقات خاصة</div>
+                    <i class="fas fa-heart"></i>
+                    <h3>سيارات الأفراح</h3>
+                    <p>اجعل يومك الخاص لا يُنسى مع سياراتنا الفاخرة المزينة خصيصاً للأفراح.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+        <div class="container grid-2">
+            <div class="why-text">
+                <h2>لماذا تختارنا؟ <br><span>Why Choose Us?</span></h2>
+                <p>نحن نقدم أفضل خدمات تأجير السيارات في المنصورة مع أسطول حديث وخدمة عملاء متميزة على مدار الساعة.</p>
+                <div class="features-list">
+                    <div class="f-item"><i class="fas fa-check-circle"></i>
+                        <div><strong>خدمة 24/7:</strong> متاحون دائماً لخدمتك</div>
+                    </div>
+                    <div class="f-item"><i class="fas fa-check-circle"></i>
+                        <div><strong>أسعار تنافسية:</strong> أفضل الأسعار بدون رسوم خفية</div>
+                    </div>
+                    <div class="f-item"><i class="fas fa-check-circle"></i>
+                        <div><strong>سيارات مجهزة:</strong> أسطول حديث ومفحوص بانتظام</div>
+                    </div>
+                    <div class="f-item"><i class="fas fa-check-circle"></i>
+                        <div><strong>حجز فوري:</strong> إجراءات سريعة وسهلة</div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-image">
+                <div class="rating-circle">
+                    <h3>4.2</h3>
+                    <span>12 مراجعة</span>
+                </div>
+                <img src="BBF5F9E2-EEBE-4A12-8D16-FE9FE4FA89EC.png" alt="Car">
+            </div>
+        </div>
+    </section>
+
+    <section class="location" id="location">
+        <div class="container">
+            <div class="location-card">
+                <div class="loc-content">
+                    <h3>موقعنا في قلب المنصورة</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> قناة السويس، المنصورة قسم 2 - بجوار ماكدونالد</p>
+                    <p><i class="fas fa-clock"></i> مفتوح 24 ساعة طوال الأسبوع</p>
+                    <div class="loc-btns">
+                        <button class="btn-orange" onclick="window.open('https://maps.google.com')">احصل على
+                            الاتجاهات</button>
+                        <a href="tel:01000030402" class="btn-phone-loc">010 00030402</a>
+                    </div>
+                </div>
+                <div class="loc-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.887!2d31.393!3d31.045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDAyJzQyLjAiTiAzMcKwMjMnMzQuOCJF!5e0!3m2!1sar!2seg!4v1620000000000"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking" id="bookingForm">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-form-area">
+                    <h2>احجز سيارتك الآن</h2>
+                    <p>املأ النموذج وسنتصل بك خلال دقائق لتأكيد الحجز</p>
+                    <form id="rentalForm">
+                        <div class="input-row">
+                            <input type="text" id="name" placeholder="الاسم الكامل" required>
+                            <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+                        </div>
+                        <div class="input-row">
+                            <div class="group">
+                                <label>تاريخ الاستلام</label>
+                                <input type="date" id="pickupDate" required>
+                            </div>
+                            <div class="group">
+                                <label>تاريخ التسليم</label>
+                                <input type="date" id="dropoffDate" required>
+                            </div>
+                        </div>
+                        <select id="serviceType">
+                            <option value="اقتصادية">اقتصادية - Economy</option>
+                            <option value="فاخرة">فاخرة - Luxury</option>
+                            <option value="دفع رباعي">دفع رباعي - SUV</option>
+                            <option value="سيارة أفراح">سيارة أفراح - Wedding Car</option>
+                        </select>
+                        <div class="radio-group">
+                            <label><input type="radio" name="driver" value="بسائق" checked> بسائق</label>
+                            <label><input type="radio" name="driver" value="بدون سائق"> بدون سائق</label>
+                        </div>
+                        <button type="submit" class="btn-submit">إرسال الطلب عبر واتساب</button>
+                    </form>
+                </div>
+                <div class="booking-cta">
+                    <div class="cta-box">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>تواصل فوري</h4>
+                        <button onclick="openWhatsApp()">أرسل رسالة</button>
+                    </div>
+                    <div class="cta-box">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>اتصل بنا مباشرة</h4>
+                        <p>متاح 24/7</p>
+                        <a href="tel:01000030402">010 00030402</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-brand">
+                <h3>Speed Car Hassan</h3>
+                <p>نحن نقدم أفضل خدمات تأجير السيارات في المنصورة مع أسطول حديث وخدمة عملاء متميزة.</p>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-envelope"></i> info@speedcarhassan.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> قناة السويس، المنصورة، الدقهلية</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2025 Speed Car Hassan. جميع الحقوق محفوظة</p>
+            <div class="footer-links">
+                <a href="#">الشروط والأحكام</a> | <a href="#">سياسة الخصوصية</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
